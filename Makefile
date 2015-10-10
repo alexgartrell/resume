@@ -1,3 +1,7 @@
+
+resume.pdf: resume.html
+	weasyprint -f pdf resume.html resume.pdf
+
 resume.html: avenir-white.css resume.md
 	echo '<html>' > resume.html
 	echo '<title>Resume - Alex Gartrell</title>' >> resume.html
